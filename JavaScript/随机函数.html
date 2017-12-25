@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>随机函数</title>
+</head>
+<body>
+  
+  <script>
+
+    (function () {
+      // Math.round() 四舍五入
+      // Math.ceil()  向上取整
+
+      // 随机函数
+      console.log(Math.round(Math.random()))      // 0 ~ 1 之间的数
+
+      console.log(Math.round(Math.random() * 10))   // 0 ~ 10 之间的数
+
+      console.log(Math.round(Math.random() * 80 + 20))   // 20 ~ 100 之间的数
+
+      // 推出公式
+      let x = 15
+      let y = 36
+      console.log(Math.round(Math.random() * (y - x) + x))
+
+      console.log( Math.round( Math.random() * x ) )      // 0 ~ x 之间的数
+
+      console.log(Math.ceil(Math.random() * x))         // 1 ~ x 之间的数
+    })();
+
+  </script>
+</body>
+</html>
