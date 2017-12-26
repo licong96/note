@@ -1,0 +1,5 @@
+
+{
+  pointer-events:none;
+  /* pointer-events:none  的作用是让元素实体“虚化” ，滚动的时候设置当前元素不可被点击，可以用在一个canvas背景上，但是未必是一个很好的方案*/
+}
