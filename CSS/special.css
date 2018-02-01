@@ -3,3 +3,16 @@
   pointer-events:none;
   /* pointer-events:none  的作用是让元素实体“虚化” ，滚动的时候设置当前元素不可被点击，可以用在一个canvas背景上，但是未必是一个很好的方案*/
 }
+
+/* 为了增强可访问性，让自己不忘给图片标签加上 alt 属性 */
+img[alt=""],
+img:not([lat]) {
+  border: 5px dashed #c00;
+}
+
+/* 对于常见的左边定宽，右边自适应的 Flex 布局会出现一个奇怪的现象，就是右边会因为不间断的英文单词被撑开超出容器的宽度 */
+.right {
+  word-wrap: break-word;
+  flex-grow: 1;
+  width: 0;
+}
