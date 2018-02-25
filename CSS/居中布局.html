@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中</title>
+  <style media="screen">
+    * {
+      margin: 0;
+    }
+    .parent {
+      padding: 20px;
+      height: 150px;
+      background-color: #f5f5f5;
+      /* text-align: center; */
+      display: flex;
+      justify-content: center;
+    }
+    .parent .child {
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .vertical {
+      position: relative;
+      margin-top: 20px;
+      padding: 20px;
+      height: 150px;
+      background-color: #f5f5f5;
+      /* display: table-cell;
+      vertical-align: middle; */
+    }
+    .vertical .text {
+      background-color: red;
+    }
+    .vertical .box {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- 水平居中 -->
+  <!-- 行内元素：对父元素设置 text-align:center; -->
+  <!-- 定宽块状元素: 设置左右margin值为 auto; -->
+  <div class="parent">
+    <div class="child">block</div>
+    <!-- <span>inline</span> -->
+  </div>
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+
+  <!-- 垂直居中 -->
+  <!-- 父元素一定，子元素为单行内联文本：设置父元素的height等于行高line-height -->
+  <!-- 父元素一定，子元素为多行内联文本：设置父元素的display:table-cell或inline-block，再设置vertical-align:middle -->
+  <!-- 块状元素:设置子元素position: absolute，然后设置top: 0; bottom: 0 -->
+  <div class="vertical">
+    <!-- <p class="text">一行文本</p>
+    <p class="text">一行文本</p>
+    <p class="text">一行文本</p> -->
+    <div class="box">块状元素</div>
+  </div>
+
+</body>
+</html>

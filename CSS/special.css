@@ -16,3 +16,9 @@ img:not([lat]) {
   flex-grow: 1;
   width: 0;
 }
+
+.box {
+  overflow: auto;
+  /* ios惯性滑动滑动 */
+  -webkit-overflow-scrolling: touch;
+}
