@@ -1,0 +1,17 @@
+
+	本地推送到远程：
+	git remote add origin git@github.com:licong96/mall-fe.git
+
+
+	删除文件：
+	rm -rf 或者 rimraf
+
+	
+	清除npm缓存
+	npm cache clean -f
+	
+	清理npm垃圾数据
+	npm cache verify
+	
+	清除yarn缓存
+	yarn cache clean
