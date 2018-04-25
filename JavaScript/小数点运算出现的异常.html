@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    var eye = 0.1;
+    var ear = 0.2;
+
+    console.log(eye + ear);    // => 0.30000000000000004
+
+    // 解决方法
+    // 1: 将小数变为整数来处理
+    console.log( ((eye * 10) + (ear * 10)) / 10 )  // => 0.3
+
+    // 2： toFixed(1) 方法保留一位小数
+    var mouth = eye + ear;
+    console.log(mouth.toFixed(1))   // => 0.3
+
+  </script>
+</body>
+</html>
